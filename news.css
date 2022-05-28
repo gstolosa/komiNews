@@ -1,0 +1,27 @@
+.animate__animated.animate__bounce {
+    --animate-duration: 3s;
+}
+
+h3 {
+    margin-bottom: 30px;
+    font-size: 250%;
+}
+
+p { 
+    font-size: medium;  
+    line-height: 35px;
+}
+
+#link:hover { 
+    color: rgb(184, 122, 168); 
+}
+
+img {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
