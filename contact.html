@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komi News</title>
+    <!--CSS style-->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
+    <!--Fuentes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!--FavIcon-->
+    <link type="image/png" rel="icon" href="img/fvico.png">
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <!-- Clase container -->
+    <div class="container">
+        <!-- Clase nav -->
+        <nav class="nav-main">
+            <ul class="nav-menu">
+                <li><a href="home.html"><i class="fas fa-home"></i></a></li>
+                <li>
+                    <a href="#">Mangas</a>
+                    <ul class="submenu">
+                        <li><a href="seinen.html">Seinen</a></li>
+                        <li><a href="shonen.html">Shōnen</a></li>
+                        <li><a href="shojo.html">Shōjo</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">Sobre mi</a>
+                </li>
+                <li>
+                    <a href="#">Contáctame</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    
+    <!-- Formulario -->
+    <h3>Contáctame</h3>
+    <p>Te estaré respondiendo a la mayor brevedad posible!</p>
+    <br>
+    <form name="contact" method="POST" data-netlify="true">
+        <p><label for="name">Nombre: </label></p>
+        <input type="text" name="name" id="name" required autocomplete="off">
+        <p><label for="email">Email: </label></p>
+        <input type="email" name="email" id="email" required autocomplete="off">
+        <p><label for="textarea">Dime lo que quieras: </label></p>
+        <textarea name="textarea" id="textarea" rows="4" cols="50"></textarea>
+        <p><input type="checkbox" required autocomplete="off"> Estoy de acuerdo en enviar mis datos</label></p>
+        <br>
+        <button>Enviar</button>
+    </form>  
+    <br>
+    
+    <!-- Sección footer links -->
+    <div class="footer">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Mangas</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="seinen.html">Seinen</a>
+                </li>
+                <li>
+                    <a href="shonen.html">Shōnen</a>
+                </li>
+                <li>
+                    <a href="shojo.html">Shōjo</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="about.html">
+                        <h3>Sobre mi</h3>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Contáctame</h3>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="disclaimer.html">
+                        <h3>Aviso legal</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="copyright">
+        <h3>~ Gigito ~ <sup>©</sup></h3>
+    </footer>
+    <!--ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--JS-->
+    <script src="home.js"></script>
+    <script src="validation.js"></script>
+</body>
+
+</html>
