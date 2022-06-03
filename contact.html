@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mí</title>
+    <title>Komi News</title>
     <!--CSS style-->
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
     <!--Fuentes-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!--FavIcon-->
     <link type="image/png" rel="icon" href="img/fvico.png">
 </head>
+
 <body>
     <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -44,17 +45,25 @@
             </ul>
         </nav>
         <hr>
-        <!--Contenido-->
-        <div>
-            <img src="img/hello.png" alt="hello">
-            <h2 class="animate__animated animate__tada">Hola!</h2>
-            <p>Si estás aquí, estás viendo un <i>TPO Desarrollo Web</i> para el curso de: <a id="link" href="https://www.buenosaires.gob.ar/educacion/codo-codo" target="_blank">Codo a codo 4.0</a> // “Full Stack - Python” // Comisión 22086 a cargo del docente <u>Ramiro Escalante Leiva</u>.</p>
-            <p>Mi nombre es Gisela Tolosa y además del curso, me encuentro realizando la carrera <u>Técnico Superior en Analista de Sistemas</u> <i>(cursando el último año)</i> en el <a id="link" href="https://ifts16.com/" target="_blank">IFTS Nº 16</a>.</p>
-            <p>En mis tiempos libres me gusta leer, y como todo adulto independiente, los videojuegos!</p>
-            <p>Te invito a ver mi <a id="link" href="https://github.com/gstolosa">repositorio</a>, o contactarme a través de mi <a id="link" href="https://ar.linkedin.com/in/gisela-tolosa">LinkedIn </a>.</p>
-            <p>Gracias por visitarme!</p>
-        </div>
-        <!-- Sección footer links -->
+    
+    <!-- Formulario -->
+    <h3>Contáctame</h3>
+    <p>Te estaré respondiendo a la mayor brevedad posible!</p>
+    <br>
+    <form name="contact" method="POST" data-netlify="true">
+        <p><label for="name">Nombre: </label></p>
+        <input type="text" name="name" id="name" required autocomplete="off">
+        <p><label for="email">Email: </label></p>
+        <input type="email" name="email" id="email" required autocomplete="off">
+        <p><label for="textarea">Dime lo que quieras: </label></p>
+        <textarea name="textarea" id="textarea" rows="4" cols="50"></textarea>
+        <p><input type="checkbox" required autocomplete="off"> Estoy de acuerdo en enviar mis datos</label></p>
+        <br>
+        <button>Enviar</button>
+    </form>  
+    <br>
+    
+    <!-- Sección footer links -->
     <div class="footer">
         <div class="footer-container">
             <ul>
@@ -96,7 +105,6 @@
             </ul>
         </div>
     </div>
-
     <footer class="copyright">
         <h3>~ Gigito ~ <sup>©</sup></h3>
     </footer>
@@ -104,5 +112,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--JS-->
     <script src="home.js"></script>
+    <script src="validation.js"></script>
 </body>
+
 </html>
